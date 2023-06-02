@@ -15,11 +15,13 @@ export default function AddTodo({ submitHandler }) {
         placeholder="nova uloha..."
         onChangeText={changeHandler}
       />
-      <Button
-        onPress={() => submitHandler(text)}
-        title="pridat ulohu"
-        color="coral"
-      />
+      <View style={{ marginRight: 20 }}>
+        <Button
+          onPress={() => submitHandler(text)}
+          title="pridat ulohu"
+          color="coral"
+        />
+      </View>
     </View>
   );
 }
